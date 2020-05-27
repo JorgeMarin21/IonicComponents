@@ -1,0 +1,46 @@
+<app-header titulo="Prueba"></app-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="2">
+      <ion-button fill="clear" (click)="prev()">
+        <!-- <ion-button fill="clear" class=swiper-button-prev> -->
+
+        <ion-icon slot="icon-only" name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="8">
+      <ion-slides class="miclase" pager="true" [options]="slideOpts">
+        <ion-slide class="slide-1">
+          <ion-icon name="logo-apple"></ion-icon>
+          <br>
+          <h1> Apple</h1>
+        </ion-slide>
+        <ion-slide class="slide-2">
+          <ion-icon name="logo-apple-appstore"></ion-icon>
+          <br>
+          <h1> App Store</h1>
+        </ion-slide>
+        <ion-slide class="slide-3">
+          <ion-icon name="logo-android"></ion-icon>
+          <br>
+          <h1> Android</h1>
+        </ion-slide>
+        <ion-slide class="slide-4">
+          <ion-icon name="logo-google-playstore"></ion-icon>
+          <br>
+          <h1> Play Store</h1>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+
+    <ion-col size="2">
+      <ion-button fill="clear" (click)="next()">
+        <!-- <ion-button fill="clear" > -->
+
+        <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

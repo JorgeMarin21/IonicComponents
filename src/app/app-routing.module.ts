@@ -103,6 +103,10 @@ const routes: Routes = [
     path: 'prueba-base64',
     loadChildren: () => import('./pages/prueba-base64/prueba-base64.module').then( m => m.PruebaBase64PageModule)
   },
+  {
+    path: 'prueba-swiper',
+    loadChildren: () => import('./pages/prueba-swiper/prueba-swiper.module').then( m => m.PruebaSwiperPageModule)
+  },
 ];
 
 @NgModule({

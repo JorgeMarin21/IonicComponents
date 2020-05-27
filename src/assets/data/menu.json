@@ -118,5 +118,12 @@
       "icon": "qr-code",
       "name": "Prueba Base 64",
       "redirectTo": "/prueba-base64"
+    },
+    {
+      "icon": "logo-stackoverflow",
+      "name": "Prueba Swiper",
+      "redirectTo": "/prueba-swiper"
     }
   ]
+
+ 
