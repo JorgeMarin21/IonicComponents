@@ -1,0 +1,20 @@
+<app-header titulo="prueba qr"></app-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Codigo: {{nombre || 'Sin nombre'}}</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">codigo</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="onSubmitTemplate()" expand="full" type="submit">Enviar</ion-button>
+  <ion-card *ngIf="mostrar">
+    <ion-card-title>Tipo de transferencia: {{tipo}}</ion-card-title>
+    <ion-card-subtitle>Base64: {{base64}}</ion-card-subtitle>
+  </ion-card>
+</ion-content>
